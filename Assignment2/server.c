@@ -2,7 +2,7 @@
 
 Jane Coralde | 100660214
 
-Client and Server using UDP Implementation
+Client and Server using TCP Implementation
 
 Write a program with two parts: 1) a client, and 2) an arithmetic server. The job of the
 client is to accept input from the keyboard and translate strings that you type into requests to the
@@ -34,8 +34,8 @@ arithmetic operation or an error code representing the reason for the error. (Fo
 can use the integer 1 to represent "divide by zero".)
 
 Complile and execute using:
-	gcc UDPClient.c - UDPClient
-	./UDPClient
+	gcc server.c - server
+	./server
 
 Note that the code is not finished and does not fully work
 
