@@ -1,38 +1,4 @@
-/*
-Jane Coralde | 100660214
 
-Write a C program called duplicate which simply copies a file from one place to another. The
-program will be invoked as follows: 
-	duplicate SourceFile TargetFile
-
-duplicate must create an exact duplicate of SourceFile under the new name TargetFile .
-Upon successful completion, duplicate should report the total number of bytes copied and exit
-with result zero. For example: 
-	duplicate: Copied 38475 bytes from file foobar to bizbaz.
-
-Where ” SourceFile ” is foobar and “ TargetFile ” is bizbaz
-If the duplicate takes longer than one second, then every second the program will emit a short
-message: 
-	duplicate: still duplicateing...
-	duplicate: still duplicateing...
-	duplicate: still duplicateing…
-	
-If duplicate encounters any kind of error or user mistake, it must immediately stop and emit a
-message that states the program name, the failing operation, and the reason for the failure, and
-then exit with result 1. For example:
-	duplicate: Couldn't open file foobar: Permission Denied.
-	duplicate: Couldn't write to file bizbaz: Disk Full.
-
-If the program is invoked incorrectly, then it should immediately exit with a helpful message:
-duplicate: Too many arguments!
-usage: 
-	duplicate <sourcefile> <targetfile>
-
-Compile and execute using:
-	gcc duplicate.c -o duplicate
-	./duplicate <sourcefile> <targetfile>	
-	
-*/
 
 #include <stdio.h>
 #include <string.h>
