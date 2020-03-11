@@ -37,8 +37,6 @@ Complile and execute using:
 	gcc server.c - server
 	./server
 
-Note that the code is not finished and does not fully work
-
 */
 
 #include<stdio.h>
